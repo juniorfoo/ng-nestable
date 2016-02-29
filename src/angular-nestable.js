@@ -145,7 +145,7 @@
 			 * Flag to turn on/off draggable handle
 			 * @param  {[string]} value
 			 */
-	        this.enableDraggableHandle = false;
+	        this.enableDraggableHandle = true;
 	    })
 		.directive('ngNestable', ['$compile', '$nestable', function($compile, $nestable){
 			return {
