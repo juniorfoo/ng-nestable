@@ -199,6 +199,9 @@
 
       function buildNestableHtml(model, tpl) {
         var root = $('<div class="dd"></div>');
+        if (!model.length) {
+          $('<div class="dd-empty"></div>').appendTo(root);
+        }
         var rootList = $('<ol class="dd-list"></ol>').appendTo(root);
         var draggableHandle = $nestable.enableDraggableHandle;
         model.forEach(function f(item) {
